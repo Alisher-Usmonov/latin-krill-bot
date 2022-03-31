@@ -1,0 +1,19 @@
+{
+  "name": "latin-krill-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.js",
+  "scripts": {
+    "dev": "nodemon ./src/index.js",
+    "start": "node ./src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cyrillic-to-latin": "^2.0.0",
+    "dotenv": "^16.0.0",
+    "latin-to-cyrillic": "^1.0.1",
+    "node-telegram-bot-api": "^0.56.0"
+  }
+}
