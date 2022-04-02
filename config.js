@@ -3,5 +3,5 @@ require("dotenv").config();
 const { env } = process;
 module.exports = {
     TOKEN: env.TOKEN,
-    URL: env.URL
+    APP_URL: env.APP_URL
 }
