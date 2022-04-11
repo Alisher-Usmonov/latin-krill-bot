@@ -1,15 +1,11 @@
 const TelegramBot = require("node-telegram-bot-api");
 const latinToCyrillic = require("latin-to-cyrillic");
 const cyrillicToLatin = require("cyrillic-to-latin");
-const { TOKEN, APP_URL } = require("../config");
+const { TOKEN } = require("../config");
 
 const bot = new TelegramBot(TOKEN, {
-    webHook: {
-        port: process.env.PORT
-    }
+    polling: true
 });
-
-bot.setWebHook(`${APP_URL}/bot${TOKEN}`);
 
 bot.on("message", async (msg) => {
     let chatId = msg.from.id;
